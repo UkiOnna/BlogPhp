@@ -18,15 +18,7 @@ $router = new Klein();
 $router->get("/?", function () {
     return "TARAATAATATARTARATATA";
 });
-$router->with("/login", function () use ($router) {
-    $controller = new LoginController();
-    $router->get("/?", function (Request $request,Response $response) use ($controller) {
-        if(Auth::isLogin()){
-            $response->redirect(Helpers::url("admin"))->send();
-            exit();
-        }
-        return $controller->show();
-    });
+
 
     $router->post("/?", function (Request $request, Response $response) use ($controller) {
         if(Auth::isLogin()) {
@@ -44,18 +36,9 @@ $router->with("/login", function () use ($router) {
         }
         return $response->redirect($url)->send();
     });
-});
 
-$router->with("/admin", function () use ($router) {
-    $router->get("/?", function (Request $request, Response $response) {
-        return $response->redirect(Helpers::url("admin", "dashboard"))->send();
-    });
+include "Web/admin.php";
 
-    $router->get("/dashboard/?", function (Request $request,Response $response) {
-        Auth::middleware($response);
-        $controller = new DashboardController();
-        return $controller->show();
-    });
-});
+include "Web/auth.php";
 
 $router->dispatch();
