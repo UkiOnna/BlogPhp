@@ -26,11 +26,15 @@ class Auth
 
     static function login($username, $password)
     {
-        if (!$username or !$password)
+        if (!$username or !$password){
+            Flashes::message("Enter login and password");
             return false;
+        }
+
 
         $users = new Users();
         if (!$users->has(["username" => $username])) {
+            Flashes::message("Invalid login and password","danger");
             return false;
         }
         $user = $users->get("*", [
@@ -38,6 +42,7 @@ class Auth
         ]);
 
         if (!Password::verify($password, $user["password"])) {
+            Flashes::message("Invalid login and password","danger");
             return false;
         }
 
@@ -53,6 +58,8 @@ class Auth
         ], [
             "username" => $username
         ]);
+
+        Flashes::message("Success login","success");
 
         return $users->has(["hash" => $hash]);
 

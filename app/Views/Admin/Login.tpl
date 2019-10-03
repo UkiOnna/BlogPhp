@@ -4,6 +4,12 @@
 
    <div class="row">
        <div class="col-12 col-lg-4 offset-lg-4">
+
+           {foreach $g.flashes as $flash}
+               <div class="mb-3 alert alert-{$flash.type}">
+                   {$flash.message}
+               </div>
+           {/foreach}
            <form action="/login", method="post">
 
                <h3 class="mb-3 text-center">{$title}</h3>

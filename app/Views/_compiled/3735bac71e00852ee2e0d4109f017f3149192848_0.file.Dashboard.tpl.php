@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2019-10-02 18:02:02
+/* Smarty version 3.1.34-dev-7, created on 2019-10-03 16:48:52
   from 'C:\OSPanel\domains\php.blog\app\Views\Admin\Dashboard.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5d94bbeabb8c43_58609156',
+  'unifunc' => 'content_5d95fc440f0922_20382249',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3735bac71e00852ee2e0d4109f017f3149192848' => 
     array (
       0 => 'C:\\OSPanel\\domains\\php.blog\\app\\Views\\Admin\\Dashboard.tpl',
-      1 => 1570028519,
+      1 => 1570110529,
       2 => 'file',
     ),
   ),
@@ -22,10 +22,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:global/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5d94bbeabb8c43_58609156 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d95fc440f0922_20382249 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:Admin/Blocks/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
-<h1>Dashboard</h1>
 
 <div class="container">
     <div class="mb-3 text-right">

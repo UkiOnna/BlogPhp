@@ -1,5 +1,4 @@
 {include file="Admin/Blocks/Header.tpl"}
-<h1>Dashboard</h1>
 
 <div class="container">
     <div class="mb-3 text-right">

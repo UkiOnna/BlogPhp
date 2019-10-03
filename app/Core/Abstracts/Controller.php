@@ -15,9 +15,15 @@ use Core\RenderEngine;
 
 abstract class Controller implements ControllerInterface
 {
+    protected $layout;
+
     public function render($template_name, $variables = [])
     {
-        $engine = RenderEngine::get();
+        if ($this->layout !== null){
+            $variables["template"]=$template_name. Config::main("template_extension");
+            $template_name="layout/" . $this->layout;
+        }
+            $engine = RenderEngine::get();
         if ($variables) {
             foreach ($variables as $key => $value) {
                 $engine->assign($key, $value);

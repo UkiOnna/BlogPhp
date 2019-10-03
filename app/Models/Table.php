@@ -52,4 +52,9 @@ abstract class Table extends Model
         ]);
     }
 
+    function count($where = null)
+    {
+        return $this->db()->count(static::$table_name, $where);
+    }
+
 }

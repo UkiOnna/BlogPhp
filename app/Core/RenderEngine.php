@@ -20,6 +20,7 @@ final class RenderEngine
         self::$engine=new Smarty();
         self::$engine->setTemplateDir(Helpers::path("app","Views"));
         self::$engine->setCompileDir(Helpers::path("app","Views","_compiled"));
+        self::$engine->assign("g",Config::globals());
     }
 
     static function get(){

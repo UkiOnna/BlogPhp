@@ -3,6 +3,7 @@
 use Controllers\Admin\DashboardController;
 use Controllers\IndexController;
 use Controllers\LoginController;
+use Controllers\PostsController;
 use Core\Helpers;
 use Core\RenderEngine;
 use Klein\Klein;
@@ -11,31 +12,26 @@ use Klein\Response;
 use Models\Auth;
 use Models\Password;
 use Models\Tables\News;
+use Models\Tables\Posts;
 use Models\Tables\Users;
 
 
 $router = new Klein();
 $router->get("/?", function () {
-    return "TARAATAATATARTARATATA";
+    $controller=new PostsController();
+    return $controller->getByPage(1);
 });
 
 
-    $router->post("/?", function (Request $request, Response $response) use ($controller) {
-        if(Auth::isLogin()) {
-            $response->redirect(Helpers::url("admin"))->send();
-            exit();
-        }
+$router->get("/page/[i:page]/?", function (Request $request) {
+    $controller=new PostsController();
+    return $controller->getByPage($request->param("page"));
+});
 
-        $username = $request->param("username");
-        $password = $request->param("password");
+$router->get("/[i:id]/?", function () {
 
-        if ($controller->make($username, $password)) {
-            $url = Helpers::url("admin");
-        } else {
-            Helpers::url("login");
-        }
-        return $response->redirect($url)->send();
-    });
+});
+
 
 include "Web/admin.php";
 

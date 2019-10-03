@@ -15,6 +15,22 @@ $router->with("/login", function () use ($router) {
         }
         return $controller->show();
     });
+
+    $router->post("/?", function (Request $request, Response $response) use ($controller) {
+        if (Auth::isLogin()) {
+            $response->redirect(Helpers::url("admin"))->send();
+            exit();
+        }
+        $username = $request->param("username");
+        $password = $request->param("password");
+        if ($controller->make($username, $password)) {
+            $url = Helpers::url("admin");
+        }
+        else{
+            $url = Helpers::url("login");
+        }
+        return $response->redirect($url)->send();
+    });
 });
 
     $router->get("/logout/?", function (Request $request, Response $response) {

@@ -44,7 +44,12 @@ class Config
     }
 
 
+
     static function main($key=null){
         return self::fromName("main",$key);
+    }
+
+    static function globals($key=null){
+        return self::fromName("globals",$key);
     }
 }

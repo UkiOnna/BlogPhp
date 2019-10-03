@@ -25,8 +25,6 @@ class Posts extends Table
             $item["author"]=$users->get("*",[
                 "id"=>$item["user_id"]
             ]);
-
-
         }
         return $array;
     }
