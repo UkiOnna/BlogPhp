@@ -1,0 +1,1 @@
+{"code":5000,"data":{"token":"3130e92338923372881fb3b506e19d48"},"messages":[{"message":"Success login","type":"success"}]}

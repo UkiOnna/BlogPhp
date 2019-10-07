@@ -1,0 +1,338 @@
+POST http://php.blog:8000/api/users?token=e825fd362cdf15756d521e96c79d20e8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T094641.200.txt
+
+###
+
+POST http://php.blog:8000/api/users?token=e825fd362cdf15756d521e96c79d20e8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T094531.200.txt
+
+###
+
+POST http://php.blog:8000/api/users?token=e825fd362cdf15756d521e96c79d20e8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T094424.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T094402.200.txt
+
+###
+
+POST http://php.blog:8000/api/users?token=aed1ece60ab45a0c8768e19df9cdabeb
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://php.blog:8000/api/users?token=aed1ece60ab45a0c8768e19df9cdabeb
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T094044.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093414.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093412.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093356.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093354.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093353.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093352.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093351.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093350.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093349.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093347-1.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093347.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093346.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093343-1.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093343.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093342.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093341-1.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093341.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093340-1.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093340.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093339-1.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093339.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093338.200.txt
+
+###
+
+POST http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T093120.200.html
+
+###
+
+GET http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://php.blog:8000/api/token?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://php.blog:8000/resources?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://php.blog:8000/resources?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8000/resources?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T092933.404.html
+
+###
+
+GET http://localhost:8000/resources?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T092919.404.html
+
+###
+
+GET http://localhost:8080/resources?username=admin&password=admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-07T092836.404.html
+
+###
+

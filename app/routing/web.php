@@ -36,5 +36,6 @@ $router->get("/[i:id]/?", function () {
 include "Web/admin.php";
 
 include "Web/auth.php";
+include "api.php";
 
 $router->dispatch();
