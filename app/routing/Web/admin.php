@@ -13,10 +13,10 @@ $router->with("/admin", function () use ($router) {
         return $response->redirect(Helpers::url("admin", "dashboard"))->send();
     });
 
-    $router->get("/dashboard/?", function (Request $request,Response $response) {
+    $router->get("/dashboard/[i:page]/?", function (Request $request, Response $response){
         Auth::middleware($response);
         $controller = new DashboardController();
-        return $controller->show();
+        $controller->getByPage($request->param("page"));
     });
 
     $router->with("/posts",function () use ($router){
@@ -53,10 +53,10 @@ $router->with("/admin", function () use ($router) {
 
     });
 
-    $router->get("/categories/?", function (Request $request,Response $response) {
+    $router->get("/[i:page]/?", function (Request $request, Response $response) use () {
         Auth::middleware($response);
         $controller = new CategoriesController();
-        return $controller->show();
+        $controller->getByPage($request->param("page"));
     });
 
     $router->with("/categories",function () use ($router){

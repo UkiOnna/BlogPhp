@@ -7,8 +7,9 @@ use Klein\Response;
 use Models\Hash;
 
 $router->with("/api",function () use($router){
-    header("Content-Type: application/json: charset=utf-8",true);
+
     $router->post("/token/?",function (Request $request,Response $response){
+        header("Content-Type: application/json; charset=utf-8",true);
 
         $username=$request->param("username");
         $password=$request->param("password");
@@ -20,6 +21,7 @@ $router->with("/api",function () use($router){
     });
 
     $router->post("/users/?",function (Request $request,Response $response){
+        header("Content-Type: application/json; charset=utf-8",true);
         Hash::checkToken($request,$response);
 
         $controller=new UsersController();

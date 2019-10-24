@@ -18,6 +18,28 @@ use Models\Tables\Users;
 
 class CategoriesController extends Controller
 {
+    const ITEMS_COUNT = 10;
+    function getByPage($page){
+        $categories = new Categories();
+        $count = $categories->count();
+        $pages = ceil($count / self::ITEMS_COUNT);
+        if ($page > $pages){
+            return false;
+        }
+        $items = $categories->select("*", [
+            "ORDER" => ["id" => "DESC"],
+            "LIMIT" => [
+                ($page-1) * self::ITEMS_COUNT,
+                self::ITEMS_COUNT,
+            ]
+        ]);
+        return $this->render("admin/Categories", [
+            "title" => "Main page",
+            "categories" => $items,
+            "pages" => $pages,
+            "current_page" => $page
+        ]);
+    }
 
     function show()
     {
